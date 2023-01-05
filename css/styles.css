@@ -1,7 +1,195 @@
+/* General options */
+
+:root {
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --main-background-color: #ffffff;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--title-color);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+address {
+  font-style: normal;
+  color: inherit;
 }
 
 ul {
   list-style-type: none;
+}
+
+/* MAIN PAGE styles */
+
+/* 1. Header */
+/* 1.1 The logo */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.web {
+  color: #4d5ae5;
+}
+
+.studio {
+  color: #2e2f42;
+}
+
+/* 1.2 Navigation between site pages*/
+
+.navigation-list .navigation-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-color);
+}
+
+.navigation-list .navigation-link:active {
+  color: #404bbf;
+}
+
+/* 1.3 Address mail & tel */
+
+.contacts .contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contacts .contact-link:active {
+  color: #404bbf;
+}
+
+/* 2. Main */
+/* 2.1 The slogan & order sevice */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+.hero-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* 2.2 Competencies & our features */
+
+.features-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 2.3 Our team */
+.team {
+  background-color: #F4F4FD;
+}
+
+.team-list li {
+  background-color: #ffffff;
+}
+
+.team-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* 3. Footer */
+
+.footer {
+  background-color: #2e2f42 ;
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #E7E9FC;
+}
+
+.studio1 {
+  color: #F4F4FD;
+}
+
+.logo {
+  word-spacing: -10px;
+}
+
+/* PORTFOLIO styles */
+
+/* 1. Navigation filter */
+/* 1.1 Select buttons */
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4d5ae5;
+  background-color: #F4F4FD;
+  border-color: #E7E9FC ;
+}
+
+.filter-list .filter-btn:hover,
+.filter-list .filter-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* 1.2 Select menu */
+
+.select-menu p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }

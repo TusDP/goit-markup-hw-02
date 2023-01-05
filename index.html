@@ -8,39 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header navigation btwn pages -->
-    <header>
+    <header class="header">
       <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+        <a class="logo" href="./index.html">
+          <span class="web">WEB</span>
+          <span class="studio">STUDIO</span>
+        </a>
+        <ul class="navigation-list" >
+          <li><a class="navigation-link" href="./index.html">Studio</a></li>
+          <li><a class="navigation-link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="navigation-link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        <ul class="contacts">
+          <li><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
     </header>
     <main>
       <!-- the slogan & order sevice -->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="hero">
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button class="hero-button" type="button">Order Service</button>
       </section>
-      <!-- competencies -->
-      <section>
-        <h2>Оur Features</h2>
-        <ul>
+      <!-- competencies & our features -->
+      <section class="features">
+        <h2 class="visually-hidden">Оur Features</h2>
+        <ul class="features-list">
           <li>
             <h3>Strategy</h3>
             <p>
@@ -74,10 +77,10 @@
       <!-- occupation -->
       <section>
         <h2>What are we doing</h2>
-        <ul>
+        <ul class="occupation-list">
           <li>
             <img
-              src="./images/occupation-1.jpg"
+              src="./images/main/occupation-1.jpg"
               alt="occupation"
               width="360"
               height="300"
@@ -85,7 +88,7 @@
           </li>
           <li>
             <img
-              src="./images/occupation-2.jpg"
+              src="./images/main/occupation-2.jpg"
               alt="occupation"
               width="360"
               height="300"
@@ -93,7 +96,7 @@
           </li>
           <li>
             <img
-              src="./images/occupation-3.jpg"
+              src="./images/main/occupation-3.jpg"
               alt="occupation"
               width="360"
               height="300"
@@ -102,12 +105,12 @@
         </ul>
       </section>
       <!-- our team -->
-      <section>
+      <section class="team">
         <h2>Our Team</h2>
-        <ul>
+        <ul class="team-list">
           <li>
             <img
-              src="./images/teamcard-1.jpg"
+              src="./images/main/teamcard-1.jpg"
               alt="teamcard1"
               width="264"
               height="260"
@@ -117,7 +120,7 @@
           </li>
           <li>
             <img
-              src="./images/teamcard-2.jpg"
+              src="./images/main/teamcard-2.jpg"
               alt="teamcard2"
               width="264"
               height="260"
@@ -127,7 +130,7 @@
           </li>
           <li>
             <img
-              src="./images/teamcard-3.jpg"
+              src="./images/main/teamcard-3.jpg"
               alt="teamcard3"
               width="264"
               height="260"
@@ -137,7 +140,7 @@
           </li>
           <li>
             <img
-              src="./images/teamcard-4.jpg"
+              src="./images/main/teamcard-4.jpg"
               alt="teamcard4"
               width="264"
               height="260"
@@ -148,8 +151,11 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./index.html">WebStudio</a>
+    <footer class="footer">
+      <a class="logo" href="./index.html">
+        <span class="web">WEB</span>
+        <span class="studio1">STUDIO</span>
+      </a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
