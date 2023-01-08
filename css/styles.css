@@ -1,9 +1,13 @@
-/* General options */
+/* General settings */
 
 :root {
   --title-color: #2e2f42;
   --text-color: #434455;
   --main-background-color: #ffffff;
+  --secondary-btn-color: #404bbf;
+  --secondary-navlink-color: #404bbf;
+  --primary-filter-btn-color: #f4f4fd;
+  --secondary-filter-btn-color: #404bbf;
 }
 
 body {
@@ -42,7 +46,7 @@ h3 {
 a {
   text-decoration: none;
   color: inherit;
-} 
+}
 
 address {
   font-style: normal;
@@ -82,20 +86,29 @@ ul {
   color: var(--title-color);
 }
 
+.navigation-list .navigation-link:hover,
+.navigation-list .navigation-link:focus {
+  color: var(--secondary-navlink-color);
+}
+
 .navigation-list .navigation-link:active {
-  color: #404bbf;
+  color: var(--secondary-navlink-color);
 }
 
 /* 1.3 Address mail & tel */
 
 .contacts .contact-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
+.contacts .contact-link:hover,
+.contacts .contact-link:focus {
+  color: var(--secondary-navlink-color);
+}
+
 .contacts .contact-link:active {
-  color: #404bbf;
+  color: var(--secondary-navlink-color);
 }
 
 /* 2. Main */
@@ -110,29 +123,31 @@ ul {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  width: 500px;
 }
 
 .hero-button {
   color: #ffffff;
   background-color: #4d5ae5;
+  cursor: pointer;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: var(--secondary-btn-color);
 }
 
 /* 2.2 Competencies & our features */
 
 .features-list p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
 
 /* 2.3 Our team */
 .team {
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 
 .team-list li {
@@ -140,7 +155,6 @@ ul {
 }
 
 .team-list p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -148,18 +162,17 @@ ul {
 /* 3. Footer */
 
 .footer {
-  background-color: #2e2f42 ;
+  background-color: #2e2f42;
 }
 
 .footer p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #E7E9FC;
+  color: #e7e9fc;
 }
 
 .studio1 {
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
 
 .logo {
@@ -176,20 +189,20 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   color: #4d5ae5;
-  background-color: #F4F4FD;
-  border-color: #E7E9FC ;
+  background-color: var(--primary-filter-btn-color);
+  border-color: #e7e9fc;
+  cursor: pointer;
 }
 
 .filter-list .filter-btn:hover,
 .filter-list .filter-btn:focus {
   color: #ffffff;
-  background-color: #404bbf;
+  background-color: var(--secondary-filter-btn-color);
 }
 
 /* 1.2 Select menu */
 
 .select-menu p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
