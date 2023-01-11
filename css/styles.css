@@ -1,33 +1,27 @@
 /* General settings */
 
 :root {
-  --title-color: #2e2f42;
-  --text-color: #434455;
+  --primary-title-color: #2e2f42;
+  --secondary-title-color: #ffffff;
+  --primary-text-color: #434455;
+  --secondary-text-color: #e7e9fc;
   --main-background-color: #ffffff;
+  --secondary-background-color: #2e2f42;
+  --alternative-background-color: #f4f4fd;
+  --primary-btn-color: #4d5ae5;
   --secondary-btn-color: #404bbf;
   --secondary-navlink-color: #404bbf;
   --primary-filter-btn-color: #f4f4fd;
   --secondary-filter-btn-color: #404bbf;
+  --primary-filter-btn-textcolor: #4d5ae5;
+  --secondary-filter-btn-textcolor: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--text-color);
+  font-size: 16px;
+  color: var(--primary-text-color);
   background-color: var(--main-background-color);
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--title-color);
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--title-color);
 }
 
 .visually-hidden {
@@ -62,28 +56,26 @@ ul {
 /* 1. Header */
 /* 1.1 The logo */
 
-.logo {
+.logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
 }
 
 .web {
   color: #4d5ae5;
 }
 
-.studio {
-  color: #2e2f42;
-}
-
 /* 1.2 Navigation between site pages*/
 
 .navigation-list .navigation-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
-  color: var(--title-color);
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
 }
 
 .navigation-list .navigation-link:hover,
@@ -98,8 +90,8 @@ ul {
 /* 1.3 Address mail & tel */
 
 .contacts .contact-link {
-  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .contacts .contact-link:hover,
@@ -115,20 +107,21 @@ ul {
 /* 2.1 The slogan & order sevice */
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--secondary-background-color);
 }
 
 .hero-title {
-  color: #ffffff;
-  font-weight: 700;
+  color: var(--secondary-title-color);
   font-size: 56px;
   line-height: 1.07;
-  width: 500px;
+  letter-spacing: 0.02em;
 }
 
 .hero-button {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
-  background-color: #4d5ae5;
+  background-color: var(--primary-btn-color);
   cursor: pointer;
 }
 
@@ -140,43 +133,70 @@ ul {
 
 /* 2.2 Competencies & our features */
 
-.features-list p {
-  font-size: 16px;
-  line-height: 1.5;
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
 }
 
-/* 2.3 Our team */
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* 2.3 Occupation & our team */
+
+.occupation-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-title-color);
+}
+
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--alternative-background-color);
 }
 
 .team-list li {
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
 }
 
-.team-list p {
-  font-size: 16px;
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+.team-text {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* 3. Footer */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--secondary-background-color);
 }
 
 .footer p {
-  font-size: 16px;
   line-height: 1.5;
-  color: #e7e9fc;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
-.studio1 {
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: #f4f4fd;
-}
-
-.logo {
-  word-spacing: -10px;
 }
 
 /* PORTFOLIO styles */
@@ -188,7 +208,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #4d5ae5;
+  letter-spacing: 0.04em;
+  color: var(--primary-filter-btn-textcolor);
   background-color: var(--primary-filter-btn-color);
   border-color: #e7e9fc;
   cursor: pointer;
@@ -196,13 +217,21 @@ ul {
 
 .filter-list .filter-btn:hover,
 .filter-list .filter-btn:focus {
-  color: #ffffff;
+  color: var(--secondary-filter-btn-textcolor);
   background-color: var(--secondary-filter-btn-color);
 }
 
 /* 1.2 Select menu */
 
-.select-menu p {
-  font-size: 16px;
+.menu-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+
+.menu-text {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
