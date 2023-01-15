@@ -71,35 +71,27 @@ ul {
 
 /* 1.2 Navigation between site pages*/
 
-.navigation-list .navigation-link {
+.navigation-link {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
 }
 
-.navigation-list .navigation-link:hover,
-.navigation-list .navigation-link:focus {
-  color: var(--secondary-navlink-color);
-}
-
-.navigation-list .navigation-link:active {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--secondary-navlink-color);
 }
 
 /* 1.3 Address mail & tel */
 
-.contacts .contact-link {
+.contact-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.contacts .contact-link:hover,
-.contacts .contact-link:focus {
-  color: var(--secondary-navlink-color);
-}
-
-.contacts .contact-link:active {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--secondary-navlink-color);
 }
 
@@ -133,7 +125,7 @@ ul {
 
 /* 2.2 Competencies & our features */
 
-.features-subtitle {
+.section-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -141,15 +133,14 @@ ul {
   color: var(--primary-title-color);
 }
 
-.features-text {
+.section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 /* 2.3 Occupation & our team */
 
-.occupation-title,
-.team-title {
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -161,21 +152,8 @@ ul {
   background-color: var(--alternative-background-color);
 }
 
-.team-list li {
+.section-list li {
   background-color: var(--main-background-color);
-}
-
-.team-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-title-color);
-}
-
-.team-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /* 3. Footer */
@@ -215,23 +193,8 @@ ul {
   cursor: pointer;
 }
 
-.filter-list .filter-btn:hover,
-.filter-list .filter-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--secondary-filter-btn-textcolor);
   background-color: var(--secondary-filter-btn-color);
-}
-
-/* 1.2 Select menu */
-
-.menu-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-title-color);
-}
-
-.menu-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
